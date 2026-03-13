@@ -74,7 +74,7 @@ local MakeAttributes = function -- function --
     filepath -- string --
     ,key -- string|falsy|optional -- gettable
   )
-    if type(filepath)~=string then
+    if type(filepath)~="string" then
       return nil
     end
     local T, msg, code = Convert(Stat(filepath))
